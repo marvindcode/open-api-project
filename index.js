@@ -1,4 +1,4 @@
-document.getElementById('search-city-btn').addEventListener('click', () => {
+ocument.getElementById('search-city-btn').addEventListener('click', () => {
     const city = document.getElementById('city-input').value.trim();
 
     if (city === '') {
