@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Weather Api Project</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
-    <title>Weather app</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marvin Diaz">
+    <link href="index.css" rel="stylesheet">
+    <title>Weather Api</title>
 </head>
 <body>
-    <h1>Current Weather</h1>
-    <div id="weather-container">
-        <p>Current Weather Los Angeles</p>
-    </div>
+
+    <header class="header">
+        <img src="images/sky1.jpg" alt="Weather Header" class="header-image">
+        <h1 class="header-title">Weather Finder</h1>
+    </header>
+        
+
+    <!-- Nav links -->
+    <nav>
+        <ul class="nav-links">
+            <a id="show-today" class="active">Today</a>
+            <a id="show-forecast">Forecast</a>
+        </ul>
+    </nav>
+
+    <!-- City name -->
+    <input type="text" id="city-input" placeholder="Enter city name" />
+    <button id="search-city-btn">Search City</button>
+
+    <div id="weather-info"></div>
+    <div id="forecast-info"></div>
+
     <script src="index.js"></script>
-</body>    
+</body>
 </html>
+
+
