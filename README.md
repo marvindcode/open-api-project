@@ -22,11 +22,15 @@ The information for this project is retrieved from the Open-Meteo API which prov
 * Nominatim API: For converting city names to geographic coordinates.
 
 ## Instructions
-1. Enter the name of a city in the input field.
-2. Click the "Today" button to view the current weather for the city.
-3. Click the "Forecast" button to view a 5-day weather forecast for the city.
-4. If the city is invalid or not found, an error message will be displayed.
-5. You can switch between the "Today" and "Forecast" options.
+To access to the application you have to do the following:
+1. You need VS Code or other code editor.
+2. A browser.
+3. you will have to open the .HTML file in the browser to access the file.
+4. Enter the name of a city in the input field.
+5. Click the "Today" button to view the current weather for the city.
+6. Click the "Forecast" button to view a 5-day weather forecast for the city.
+7. If the city is invalid or not found, an error message will be displayed.
+8. You can switch between the "Today" and "Forecast" options.
 
 
 
