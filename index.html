@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Weather Api Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marvin Diaz">
+    <title>Weather Finder App</title>
     <link href="index.css" rel="stylesheet">
-    <title>Weather Api</title>
 </head>
 <body>
-
     <header class="header">
         <img src="images/sky1.jpg" alt="Weather Header" class="header-image">
         <h1 class="header-title">Weather Finder</h1>
-    </header>
         
+        <!-- Interactive field and buttons -->
+        <div class="city-input-container">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <div class="buttons-container">
+                <button id="show-today" aria-label="Show today's weather">Today</button>
+                <button id="show-forecast" aria-label="Show 5-day weather forecast">Forecast</button>
 
-    <!-- Nav links -->
-    <nav>
-        <ul class="nav-links">
-            <a id="show-today" class="active">Today</a>
-            <a id="show-forecast">Forecast</a>
-        </ul>
-    </nav>
+            </div>
+        </div>
+    </header>
 
-    <!-- City name -->
-    <input type="text" id="city-input" placeholder="Enter city name" />
-    <button id="search-city-btn">Search City</button>
+    <!-- Error message -->
+    <div id="error-message" style="display: none; color: red;">Unable to find city. Please try again.</div>
 
-    <div id="weather-info"></div>
-    <div id="forecast-info"></div>
+    <div id="weather-info" style="display: none;"></div>
+
+    <!-- Forecast information -->
+    <div id="forecast-info" style="display: none;">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-content"></div>
+    </div>
 
     <script src="index.js"></script>
 </body>
 </html>
-
-
